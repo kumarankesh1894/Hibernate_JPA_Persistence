@@ -18,8 +18,8 @@ public class CustomClassConfiguration implements PersistenceUnitInfo {
     public CustomClassConfiguration() {
         dataSource = new HikariDataSource();
         dataSource.setJdbcUrl("jdbc:mysql://localhost:3306/HJPA_DB?createDatabaseIfNotExist=true");
-        dataSource.setUsername("root");
-        dataSource.setPassword("root");
+        dataSource.setUsername("username");
+        dataSource.setPassword("password");
         dataSource.setMaximumPoolSize(10);
     }
     @Override
